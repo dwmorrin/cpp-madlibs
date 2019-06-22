@@ -7,5 +7,4 @@ You can write whatever you want as the prompt word or phrase.
 After submitting the story, the program loops over the prompts and stores the responses.
 Finally, the madlib is displayed with the substitutions.
 
-## todo
-* Read the story from a file.
+Stories can also be supplied from a plain text file as the first argument to the program.

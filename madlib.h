@@ -1,7 +1,7 @@
+#include <fstream>
 #include <iostream>
 #include <regex>
 #include <vector>
-using std::cin;
 using std::cout;
 using std::string;
 using std::vector;
@@ -16,8 +16,10 @@ class Madlib {
     Madlib();
     void getAnswers();
     void getStory();
-    void setStory();
+    void getStory(string filename);
     void printStory();
+    void setStory();
+    void setWords();
   private:
     string story;
     vector<struct Prompt> words;

@@ -1,12 +1,12 @@
 #include "madlib.h"
 
-int main() {
+int main(int argc, char **argv) {
   auto madlib = Madlib();
-  cout << "Use angle brackets to indicate the words to replace, ";
-  cout << "like an HTML tag.\n";
-  cout << "Example: \"The <noun> was <verb>.\"\n";
-  cout << "Enter your story:\n";
-  madlib.getStory();
+  if (argc == 2) {
+    madlib.getStory(argv[1]);
+  } else {
+    madlib.getStory();
+  }
   cout << "-----MADLIBS!-----\nPick your words:\n";
   madlib.getAnswers();
   madlib.setStory();
